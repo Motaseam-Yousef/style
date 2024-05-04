@@ -7,27 +7,6 @@ def main():
     # Load environment variables
     load_dotenv()
 
-    # Inject CSS for custom background and styles
-    st.markdown(
-        """
-        <style>
-        /* Main application background */
-        .stApp {
-            background-image: linear-gradient(to bottom, #FFC0CB, #FFFFFF);
-        }
-        /* Generic targeting of the sidebar for background color */
-        [data-testid="stSidebar"] .css-1d391kg, [data-testid="stSidebar"] .css-1e5imcs {
-            background-color: #FF1493; /* Dark pink color */
-        }
-        /* Font style across the app */
-        body {
-            font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Excited and playful font */
-            font-weight: bold;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
     # Streamlit app setup
     st.title("💄👄👠💅 Stylish 💅👠👄💄")
